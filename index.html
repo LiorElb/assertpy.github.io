@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>assertpy</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head>
+<body>
+<section class="section">
+<div class="container">
+<div class="columns is-mobile is-centered">
+<div class="column is-half">
+<img src="assertpy.svg" title="assertpy" />
+</div>
+</div>
+
+<div class="columns is-mobile">
+<div class="column">
+<p>Simple assertions library for unit testing in Python with a nice fluent API. Supports both Python 2 and 3.</p>
+</div>
+</div>
+
+<div class="columns is-mobile" style="margin-top:1em;">
+<div class="column">
+<h1 class="title">Example</h1>
+<p>Just import the <code>assert_that</code> function, and away you go...</p>
+<pre style="margin:1em 0 0 0; padding:0;"><code>from assertpy import assert_that
+
+def test_something():
+    assert_that(1 + 2).is_equal_to(3)
+    assert_that('foobar').is_length(6).starts_with('foo').ends_with('bar')
+    assert_that(['a', 'b', 'c']).contains('a').does_not_contain('x')
+</code></pre>
+</div>
+</div>
+
+<div class="columns is-mobile is-centered" style="margin-top:3em;">
+<div class="column has-text-centered">
+<a href="https://github.com/assertpy/assertpy" class="icon is-large"><i style="color:#000;" class="fab fa-3x fa-github"></i></a>
+</div>
+</div>
+
+</div>
+</section>
+<script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</body>
+</html>
