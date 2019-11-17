@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>assertpy</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css">
 </head>
 <body>
 <section class="section">
@@ -25,7 +27,7 @@
 <div class="column">
 <h1 class="title">Example</h1>
 <p>Just import the <code>assert_that</code> function, and away you go...</p>
-<pre style="margin:1em 0 0 0; padding:0;"><code>from assertpy import assert_that
+<pre style="margin:1em 0 0 0; padding:0;"><code style="display:block; padding:0.5em;">from assertpy import assert_that
 
 def test_something():
     assert_that(1 + 2).is_equal_to(3)
@@ -35,14 +37,17 @@ def test_something():
 </div>
 </div>
 
-<div class="columns is-mobile is-centered" style="margin-top:3em;">
+<div class="columns is-mobile is-centered" style="margin-top:2em;">
 <div class="column has-text-centered">
-<a href="https://github.com/assertpy/assertpy" class="icon is-large"><i style="color:#000;" class="fab fa-3x fa-github"></i></a>
+<a href="https://github.com/assertpy/assertpy"><i style="color:#000;" class="fa fa-4x fa-github"></i></a>
 </div>
 </div>
 
 </div>
 </section>
-<script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
 </body>
 </html>
