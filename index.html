@@ -11,8 +11,44 @@
 <link rel="icon" href="img/icon/favicon-96.png" sizes="96x96">
 <link rel="icon" href="img/icon/favicon-128.png" sizes="128x128">
 <link rel="icon" href="img/icon/favicon-192.png" sizes="192x192">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+<style>
+body { font-family: 'Roboto', sans-serif; }
+pre.code { margin: 1em 0 0 0; padding: 0; }
+pre.code code { display: block; padding: 0.5em; }
+
+.fork {
+  display: block;
+  position: absolute;
+  width: 200px;
+  top: 25px;
+  right: -50px;
+  left: auto;
+  text-align: center;
+  line-height: 50px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+a.fork-link {
+  display: block;
+  background: #222;
+  color: #ddd;
+  font-size: 0.9em;
+  text-decoration: none;
+  z-index: 2;
+}
+
+a.fork-link:hover {
+  background-color: #333;
+  color: #fff;
+}
+</style>
 </head>
 <body>
+<div class="fork"><a href="https://github.com/assertpy/assertpy" class="fork-link">Fork me on GitHub</a></div>
+
 <section class="section">
 <div class="container">
 <div class="columns is-mobile is-centered">
@@ -31,7 +67,7 @@
 <div class="column">
 <h1 class="title">Example</h1>
 <p>Just import the <code>assert_that</code> function, and away you go...</p>
-<pre style="margin:1em 0 0 0; padding:0;"><code style="display:block; padding:0.5em;">from assertpy import assert_that
+<pre class="code"><code>from assertpy import assert_that
 
 def test_something():
     assert_that(1 + 2).is_equal_to(3)
