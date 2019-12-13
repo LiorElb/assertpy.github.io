@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>assertpy</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css">
 <link rel="icon" href="img/icon/favicon-32.png" sizes="32x32">
@@ -13,42 +13,12 @@
 <link rel="icon" href="img/icon/favicon-192.png" sizes="192x192">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 <style>
-body { font-family: 'Roboto', sans-serif; }
-pre.code { margin: 1em 0 0 0; padding: 0; }
+body { font-family: 'Roboto', sans-serif; font-size: 15px; }
+pre.code { margin: 1em 0; padding: 0; }
 pre.code code { display: block; padding: 0.5em; }
-
-.fork {
-  display: block;
-  position: absolute;
-  width: 200px;
-  top: 25px;
-  right: -50px;
-  left: auto;
-  text-align: center;
-  line-height: 50px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 1);
-}
-
-a.fork-link {
-  display: block;
-  background: #222;
-  color: #ddd;
-  font-size: 0.9em;
-  text-decoration: none;
-  z-index: 2;
-}
-
-a.fork-link:hover {
-  background-color: #333;
-  color: #fff;
-}
 </style>
 </head>
 <body>
-<div class="fork"><a href="https://github.com/assertpy/assertpy" class="fork-link">Fork me on GitHub</a></div>
-
 <section class="section">
 <div class="container">
 <div class="columns is-mobile is-centered">
@@ -68,18 +38,45 @@ a.fork-link:hover {
 <h1 class="title">Example</h1>
 <p>Just import the <code>assert_that</code> function, and away you go...</p>
 <pre class="code"><code>from assertpy import assert_that
-
-def test_something():
-    assert_that(1 + 2).is_equal_to(3)
-    assert_that('foobar').is_length(6).starts_with('foo').ends_with('bar')
-    assert_that(['a', 'b', 'c']).contains('a').does_not_contain('x')
+  
+  def test_something():
+  assert_that(1 + 2).is_equal_to(3)
+  assert_that('foobar').is_length(6).starts_with('foo').ends_with('bar')
+  assert_that(['a', 'b', 'c']).contains('a').does_not_contain('x')
 </code></pre>
+<p>Of course, assertpy works best with a python test runner like <a href="http://pytest.org/">pytest</a> (our favorite) or <a href="http://nose.readthedocs.org/">Nose</a>.</p>
+</div>
+</div>
+
+<div class="columns is-mobile" style="margin-top:1em;">
+<div class="column">
+<h1 class="title">Install</h1>
+<p>The assertpy library is available via <a href="https://pypi.org/project/assertpy/">PyPI</a>.
+Just install with:</p>
+<pre class="code"><code class="bash">pip install assertpy</code></pre>
+<p>Or, if you are a big fan of <a href="https://conda.io/">conda</a> like we are, there is an
+<a href="https://github.com/conda-forge/assertpy-feedstock">assertpy-feedstock</a> for
+<a href="https://conda-forge.org/">Conda-Forge</a> that you can use:</p>
+<pre class="code"><code class="bash">conda install assertpy --channel conda-forge</code></pre>
 </div>
 </div>
 
 <div class="columns is-mobile is-centered" style="margin-top:2em;">
-<div class="column has-text-centered">
-<a href="https://github.com/assertpy/assertpy"><i style="color:#000;" class="fa fa-4x fa-github"></i></a>
+<div class="column">
+<p class="buttons is-centered are-large">
+<a href="docs.html">
+<button class="button is-danger">
+  <span class="icon"><i class="fa fa-lg fa-file-text"></i></span>
+  <span>Docs</span>
+</button>
+</a>
+<a href="https://github.com/assertpy/assertpy">
+<button class="button is-light">
+  <span class="icon"><i class="fa fa-lg fa-github"></i></span>
+  <span>Code</span>
+</button>
+</a>
+</p>
 </div>
 </div>
 
