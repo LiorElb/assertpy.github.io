@@ -38,12 +38,11 @@ pre.code code { display: block; padding: 0.5em; }
 <h1 class="title">Example</h1>
 <p>Just import the <code>assert_that</code> function, and away you go...</p>
 <pre class="code"><code class="python">from assertpy import assert_that
-  
-  def test_something():
-  assert_that(1 + 2).is_equal_to(3)
-  assert_that('foobar').is_length(6).starts_with('foo').ends_with('bar')
-  assert_that(['a', 'b', 'c']).contains('a').does_not_contain('x')
-</code></pre>
+
+def test_something():
+    assert_that(1 + 2).is_equal_to(3)
+    assert_that('foobar').is_length(6).starts_with('foo').ends_with('bar')
+    assert_that(['a', 'b', 'c']).contains('a').does_not_contain('x')</code></pre>
 <p>Of course, assertpy works best with a python test runner like <a href="http://pytest.org/">pytest</a> (our favorite) or <a href="http://nose.readthedocs.org/">Nose</a>.</p>
 </div>
 </div>
