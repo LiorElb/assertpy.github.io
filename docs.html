@@ -32,7 +32,7 @@ pre.code code { display: block; padding: 0.5em; }
 
 <nav class="navbar is-danger is-spaced" role="navigation" aria-label="main navigation">
 <div class="navbar-brand">
-  <a class="navbar-item" href=".">
+  <a class="navbar-item" href="index.html">
     <img src="img/assertpy.svg" title="assertpy" width="153" height="48" />
   </a>
 </div>
@@ -63,9 +63,9 @@ pre.code code { display: block; padding: 0.5em; }
   <div class="section content" id="module-assertpy.assertpy">
 <span id="assertpy"></span><h1 class="title">assertpy<a class="headerlink" href="#module-assertpy.assertpy" title="Permalink to this headline">¶</a></h1>
 <p>Assertion library for python unit testing with a fluent API</p>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.assertpy.AssertionBuilder">
-<em class="property">class </em><code class="sig-name descname">AssertionBuilder</code><span class="sig-paren">(</span><em class="sig-param">val</em>, <em class="sig-param">description=''</em>, <em class="sig-param">kind=None</em>, <em class="sig-param">expected=None</em>, <em class="sig-param">logger=None</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.AssertionBuilder" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-name descname">AssertionBuilder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span></em>, <em class="sig-param"><span class="n">description</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">kind</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">expected</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">logger</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.AssertionBuilder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#assertpy.string.StringMixin" title="assertpy.string.StringMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.string.StringMixin</span></code></a>, <a class="reference internal" href="#assertpy.snapshot.SnapshotMixin" title="assertpy.snapshot.SnapshotMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.snapshot.SnapshotMixin</span></code></a>, <a class="reference internal" href="#assertpy.numeric.NumericMixin" title="assertpy.numeric.NumericMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.numeric.NumericMixin</span></code></a>, <a class="reference internal" href="#assertpy.helpers.HelpersMixin" title="assertpy.helpers.HelpersMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.helpers.HelpersMixin</span></code></a>, <a class="reference internal" href="#assertpy.file.FileMixin" title="assertpy.file.FileMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.file.FileMixin</span></code></a>, <a class="reference internal" href="#assertpy.extracting.ExtractingMixin" title="assertpy.extracting.ExtractingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.extracting.ExtractingMixin</span></code></a>, <a class="reference internal" href="#assertpy.exception.ExceptionMixin" title="assertpy.exception.ExceptionMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.exception.ExceptionMixin</span></code></a>, <a class="reference internal" href="#assertpy.dynamic.DynamicMixin" title="assertpy.dynamic.DynamicMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.dynamic.DynamicMixin</span></code></a>, <a class="reference internal" href="#assertpy.dict.DictMixin" title="assertpy.dict.DictMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.dict.DictMixin</span></code></a>, <a class="reference internal" href="#assertpy.date.DateMixin" title="assertpy.date.DateMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.date.DateMixin</span></code></a>, <a class="reference internal" href="#assertpy.contains.ContainsMixin" title="assertpy.contains.ContainsMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.contains.ContainsMixin</span></code></a>, <a class="reference internal" href="#assertpy.collection.CollectionMixin" title="assertpy.collection.CollectionMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.collection.CollectionMixin</span></code></a>, <a class="reference internal" href="#assertpy.base.BaseMixin" title="assertpy.base.BaseMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">assertpy.base.BaseMixin</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>The main assertion class.  Never call the constructor directly, always use the
 <a class="reference internal" href="#assertpy.assertpy.assert_that" title="assertpy.assertpy.assert_that"><code class="xref py py-meth docutils literal notranslate"><span class="pre">assert_that()</span></code></a> helper instead.  Or if you just want warning messages, use the
@@ -83,9 +83,9 @@ Defaults to <code class="docutils literal notranslate"><span class="pre">None</s
 </ul>
 </dd>
 </dl>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.assertpy.AssertionBuilder.builder">
-<code class="sig-name descname">builder</code><span class="sig-paren">(</span><em class="sig-param">val</em>, <em class="sig-param">description=''</em>, <em class="sig-param">kind=None</em>, <em class="sig-param">expected=None</em>, <em class="sig-param">logger=None</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.AssertionBuilder.builder" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">builder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span></em>, <em class="sig-param"><span class="n">description</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">kind</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">expected</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">logger</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.AssertionBuilder.builder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Helper to build a new <a class="reference internal" href="#assertpy.assertpy.AssertionBuilder" title="assertpy.assertpy.AssertionBuilder"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssertionBuilder</span></code></a> instance. Use this only if not chaining to <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -102,9 +102,9 @@ Defaults to <code class="docutils literal notranslate"><span class="pre">None</s
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.assertpy.AssertionBuilder.error">
-<code class="sig-name descname">error</code><span class="sig-paren">(</span><em class="sig-param">msg</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.AssertionBuilder.error" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">error</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.AssertionBuilder.error" title="Permalink to this definition">¶</a></dt>
 <dd><p>Helper to raise an <code class="docutils literal notranslate"><span class="pre">AssertionError</span></code> with the given message.</p>
 <p>If an error description is set by <a class="reference internal" href="#assertpy.base.BaseMixin.described_as" title="assertpy.base.BaseMixin.described_as"><code class="xref py py-meth docutils literal notranslate"><span class="pre">described_as()</span></code></a>, then that
 description is prepended to the error message.</p>
@@ -129,9 +129,9 @@ description is prepended to the error message.</p>
 
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt class="title is-5" id="assertpy.assertpy.add_extension">
-<code class="sig-name descname">add_extension</code><span class="sig-paren">(</span><em class="sig-param">func</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.add_extension" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">add_extension</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.add_extension" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a new user-defined custom assertion to assertpy.</p>
 <p>Once the assertion is registered with assertpy, use it like any other assertion.  Pass val to
 <a class="reference internal" href="#assertpy.assertpy.assert_that" title="assertpy.assertpy.assert_that"><code class="xref py py-meth docutils literal notranslate"><span class="pre">assert_that()</span></code></a>, and then call it.</p>
@@ -142,11 +142,11 @@ description is prepended to the error message.</p>
 </dl>
 <p class="rubric subtitle"style="margin:0.2em 0;">Examples</p>
 
-<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="k">import</span> <span class="n">add_extension</span>
+<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="kn">import</span> <span class="n">add_extension</span>
 
 <span class="k">def</span> <span class="nf">is_5</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">val</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;</span><span class="si">{self.val}</span><span class="s1"> is NOT 5!&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{self.val}</span><span class="s1"> is NOT 5!&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="bp">self</span>
 
 <span class="n">add_extension</span><span class="p">(</span><span class="n">is_5</span><span class="p">)</span>
@@ -160,9 +160,9 @@ description is prepended to the error message.</p>
 </code></pre>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt class="title is-5" id="assertpy.assertpy.assert_that">
-<code class="sig-name descname">assert_that</code><span class="sig-paren">(</span><em class="sig-param">val</em>, <em class="sig-param">description=''</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.assert_that" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">assert_that</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span></em>, <em class="sig-param"><span class="n">description</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.assert_that" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the value to be tested, plus an optional description, and allow assertions to be called.</p>
 <p>This is a factory method for the <a class="reference internal" href="#assertpy.assertpy.AssertionBuilder" title="assertpy.assertpy.AssertionBuilder"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssertionBuilder</span></code></a>, and the single most important
 method in all of assertpy.</p>
@@ -177,7 +177,7 @@ method in all of assertpy.</p>
 </dl>
 <p class="rubric subtitle"style="margin:0.2em 0;">Examples</p>
 <p>Just import it once at the top of your test file, and away you go…:</p>
-<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="k">import</span> <span class="n">assert_that</span>
+<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="kn">import</span> <span class="n">assert_that</span>
 
 <span class="k">def</span> <span class="nf">test_something</span><span class="p">():</span>
     <span class="n">assert_that</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">is_equal_to</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -186,9 +186,9 @@ method in all of assertpy.</p>
 </code></pre>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt class="title is-5" id="assertpy.assertpy.assert_warn">
-<code class="sig-name descname">assert_warn</code><span class="sig-paren">(</span><em class="sig-param">val</em>, <em class="sig-param">description=''</em>, <em class="sig-param">logger=None</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.assert_warn" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">assert_warn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span></em>, <em class="sig-param"><span class="n">description</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">logger</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.assert_warn" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the value to be tested, and optional description and logger, and allow assertions to be
 called, but never fail, only log warnings.</p>
 <p>This is a factory method for the <a class="reference internal" href="#assertpy.assertpy.AssertionBuilder" title="assertpy.assertpy.AssertionBuilder"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssertionBuilder</span></code></a>, but unlike <a class="reference internal" href="#assertpy.assertpy.assert_that" title="assertpy.assertpy.assert_that"><code class="xref py py-meth docutils literal notranslate"><span class="pre">assert_that()</span></code></a> an
@@ -208,7 +208,7 @@ that prints warnings to <code class="docutils literal notranslate"><span class="
 </dl>
 <p class="rubric subtitle"style="margin:0.2em 0;">Examples</p>
 
-<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="k">import</span> <span class="n">assert_warn</span>
+<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="kn">import</span> <span class="n">assert_warn</span>
 
 <span class="n">assert_warn</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">is_length</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 <span class="n">assert_warn</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">is_empty</span><span class="p">()</span>
@@ -232,9 +232,9 @@ failures instead of failing.</p>
 </div>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt class="title is-5" id="assertpy.assertpy.fail">
-<code class="sig-name descname">fail</code><span class="sig-paren">(</span><em class="sig-param">msg=''</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.fail" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">fail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.fail" title="Permalink to this definition">¶</a></dt>
 <dd><p>Force immediate test failure with the given message.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -243,7 +243,7 @@ failures instead of failing.</p>
 </dl>
 <p class="rubric subtitle"style="margin:0.2em 0;">Examples</p>
 <p>Fail a test:</p>
-<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="k">import</span> <span class="n">assert_that</span><span class="p">,</span> <span class="n">fail</span>
+<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="kn">import</span> <span class="n">assert_that</span><span class="p">,</span> <span class="n">fail</span>
 
 <span class="k">def</span> <span class="nf">test_fail</span><span class="p">():</span>
     <span class="n">fail</span><span class="p">(</span><span class="s1">&#39;forced fail!&#39;</span><span class="p">)</span>
@@ -260,9 +260,9 @@ failures instead of failing.</p>
 </code></pre>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt class="title is-5" id="assertpy.assertpy.remove_extension">
-<code class="sig-name descname">remove_extension</code><span class="sig-paren">(</span><em class="sig-param">func</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.remove_extension" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">remove_extension</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.remove_extension" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove a user-defined custom assertion.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -271,13 +271,13 @@ failures instead of failing.</p>
 </dl>
 <p class="rubric subtitle"style="margin:0.2em 0;">Examples</p>
 
-<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="k">import</span> <span class="n">remove_extension</span>
+<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="kn">import</span> <span class="n">remove_extension</span>
 
 <span class="n">remove_extension</span><span class="p">(</span><span class="n">is_5</span><span class="p">)</span>
 </code></pre>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt class="title is-5" id="assertpy.assertpy.soft_assertions">
 <code class="sig-name descname">soft_assertions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.soft_assertions" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a soft assertion context.</p>
@@ -286,7 +286,7 @@ Soft assertions are way to collect assertion failures (and failure messages) tog
 raised all at once at the end, without halting your test.</p>
 <p class="rubric subtitle"style="margin:0.2em 0;">Examples</p>
 <p>Create a soft assertion context, and some failing tests:</p>
-<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="k">import</span> <span class="n">assert_that</span><span class="p">,</span> <span class="n">soft_assertions</span>
+<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="kn">import</span> <span class="n">assert_that</span><span class="p">,</span> <span class="n">soft_assertions</span>
 
 <span class="k">with</span> <span class="n">soft_assertions</span><span class="p">():</span>
     <span class="n">assert_that</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">is_length</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
@@ -314,9 +314,9 @@ execution.</p>
 </div>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt class="title is-5" id="assertpy.assertpy.soft_fail">
-<code class="sig-name descname">soft_fail</code><span class="sig-paren">(</span><em class="sig-param">msg=''</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.soft_fail" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">soft_fail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.assertpy.soft_fail" title="Permalink to this definition">¶</a></dt>
 <dd><p>Within a <a class="reference internal" href="#assertpy.assertpy.soft_assertions" title="assertpy.assertpy.soft_assertions"><code class="xref py py-meth docutils literal notranslate"><span class="pre">soft_assertions()</span></code></a> context, append the failure message to the soft error list,
 but do not halt test execution.</p>
 <p>Otherwise, outside the context, acts identical to <a class="reference internal" href="#assertpy.assertpy.fail" title="assertpy.assertpy.fail"><code class="xref py py-meth docutils literal notranslate"><span class="pre">fail()</span></code></a> and forces immediate test
@@ -328,7 +328,7 @@ failure with the given message.</p>
 </dl>
 <p class="rubric subtitle"style="margin:0.2em 0;">Examples</p>
 <p>Failing soft assertions:</p>
-<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="k">import</span> <span class="n">assert_that</span><span class="p">,</span> <span class="n">soft_assertions</span><span class="p">,</span> <span class="n">soft_fail</span>
+<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="kn">import</span> <span class="n">assert_that</span><span class="p">,</span> <span class="n">soft_assertions</span><span class="p">,</span> <span class="n">soft_fail</span>
 
 <span class="k">with</span> <span class="n">soft_assertions</span><span class="p">():</span>
     <span class="n">assert_that</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">is_equal_to</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -346,14 +346,14 @@ failure with the given message.</p>
 </div>
 <div class="section content" id="module-assertpy.base">
 <span id="base"></span><h1 class="title">base<a class="headerlink" href="#module-assertpy.base" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.base.BaseMixin">
 <em class="property">class </em><code class="sig-name descname">BaseMixin</code><a class="headerlink" href="#assertpy.base.BaseMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Base mixin.</p>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.described_as">
-<code class="sig-name descname">described_as</code><span class="sig-paren">(</span><em class="sig-param">description</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.described_as" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">described_as</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">description</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.described_as" title="Permalink to this definition">¶</a></dt>
 <dd><p>Describes the assertion.  On failure, the description is included in the error message.</p>
 <p>This is not an assertion itself.  But if the any of the following chained assertions fail,
 the description will be included in addition to the regular error message.</p>
@@ -377,9 +377,9 @@ the description will be included in addition to the regular error message.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.is_equal_to">
-<code class="sig-name descname">is_equal_to</code><span class="sig-paren">(</span><em class="sig-param">other</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_equal_to" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_equal_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_equal_to" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is equal to other.</p>
 <p>Checks actual is equal to expected using the <code class="docutils literal notranslate"><span class="pre">==</span></code> operator. When val is <em>dict-like</em>,
 optionally ignore or include keys when checking equality.</p>
@@ -414,6 +414,9 @@ optionally ignore or include keys when checking equality.</p>
 
 <span class="c1"># ignore multiple keys</span>
 <span class="n">assert_that</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span><span class="o">.</span><span class="n">is_equal_to</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="n">ignore</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">])</span>
+
+<span class="c1"># ignore nested keys</span>
+<span class="n">assert_that</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">}})</span><span class="o">.</span><span class="n">is_equal_to</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;d&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">}},</span> <span class="n">ignore</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)])</span>
 </code></pre>
 <p>When the val is <em>dict-like</em>, only certain keys can be <em>included</em> when checking equality:</p>
 <pre class="code"><code class="python"><span class="c1"># include a single key</span>
@@ -449,7 +452,7 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.is_false">
 <code class="sig-name descname">is_false</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_false" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is false.</p>
@@ -477,9 +480,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.is_instance_of">
-<code class="sig-name descname">is_instance_of</code><span class="sig-paren">(</span><em class="sig-param">some_class</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_instance_of" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_instance_of</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">some_class</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_instance_of" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is an instance of the given class.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -516,9 +519,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.is_length">
-<code class="sig-name descname">is_length</code><span class="sig-paren">(</span><em class="sig-param">length</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_length" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_length</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">length</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_length" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is the given length.</p>
 <p>Checks val is the given length using the <code class="docutils literal notranslate"><span class="pre">len()</span></code> built-in.</p>
 <dl class="field-list simple">
@@ -547,7 +550,7 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.is_none">
 <code class="sig-name descname">is_none</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_none" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is none.</p>
@@ -569,9 +572,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.is_not_equal_to">
-<code class="sig-name descname">is_not_equal_to</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_not_equal_to" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_not_equal_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_not_equal_to" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is not equal to other.</p>
 <p>Checks actual is not equal to expected using the <code class="docutils literal notranslate"><span class="pre">!=</span></code> operator.</p>
 <dl class="field-list simple">
@@ -603,7 +606,7 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.is_not_none">
 <code class="sig-name descname">is_not_none</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_not_none" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is not none.</p>
@@ -626,9 +629,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.is_not_same_as">
-<code class="sig-name descname">is_not_same_as</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_not_same_as" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_not_same_as</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_not_same_as" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is not identical to other.</p>
 <p>Checks actual is not identical to expected using the <code class="docutils literal notranslate"><span class="pre">is</span></code> operator.</p>
 <dl class="field-list simple">
@@ -661,9 +664,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.is_same_as">
-<code class="sig-name descname">is_same_as</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_same_as" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_same_as</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_same_as" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is identical to other.</p>
 <p>Checks actual is identical to expected using the <code class="docutils literal notranslate"><span class="pre">is</span></code> operator.</p>
 <dl class="field-list simple">
@@ -704,7 +707,7 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.is_true">
 <code class="sig-name descname">is_true</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_true" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is true.</p>
@@ -732,9 +735,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.base.BaseMixin.is_type_of">
-<code class="sig-name descname">is_type_of</code><span class="sig-paren">(</span><em class="sig-param">some_type</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_type_of" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_type_of</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">some_type</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.base.BaseMixin.is_type_of" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is of the given type.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -770,12 +773,12 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </div>
 <div class="section content" id="module-assertpy.collection">
 <span id="collection"></span><h1 class="title">collection<a class="headerlink" href="#module-assertpy.collection" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.collection.CollectionMixin">
 <em class="property">class </em><code class="sig-name descname">CollectionMixin</code><a class="headerlink" href="#assertpy.collection.CollectionMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Collection assertions mixin.</p>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.collection.CollectionMixin.is_iterable">
 <code class="sig-name descname">is_iterable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.collection.CollectionMixin.is_iterable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is iterable collection.</p>
@@ -798,7 +801,7 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.collection.CollectionMixin.is_not_iterable">
 <code class="sig-name descname">is_not_iterable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.collection.CollectionMixin.is_not_iterable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is not iterable collection.</p>
@@ -822,7 +825,7 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.collection.CollectionMixin.is_sorted">
 <code class="sig-name descname">is_sorted</code><span class="sig-paren">(</span><em class="sig-param">key=&lt;function CollectionMixin.&lt;lambda&gt;&gt;</em>, <em class="sig-param">reverse=False</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.collection.CollectionMixin.is_sorted" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is iterable and is sorted.</p>
@@ -863,9 +866,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.collection.CollectionMixin.is_subset_of">
-<code class="sig-name descname">is_subset_of</code><span class="sig-paren">(</span><em class="sig-param">*supersets</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.collection.CollectionMixin.is_subset_of" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_subset_of</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">supersets</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.collection.CollectionMixin.is_subset_of" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is iterable and a subset of the given superset (or supersets).</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -905,14 +908,14 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </div>
 <div class="section content" id="module-assertpy.contains">
 <span id="contains"></span><h1 class="title">contains<a class="headerlink" href="#module-assertpy.contains" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.contains.ContainsMixin">
 <em class="property">class </em><code class="sig-name descname">ContainsMixin</code><a class="headerlink" href="#assertpy.contains.ContainsMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Containment assertions mixin.</p>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.contains.ContainsMixin.contains">
-<code class="sig-name descname">contains</code><span class="sig-paren">(</span><em class="sig-param">*items</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.contains" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">contains</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">items</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.contains" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val contains the given item or items.</p>
 <p>Checks if the collection contains the given item or items using <code class="docutils literal notranslate"><span class="pre">in</span></code> operator.</p>
 <dl class="field-list simple">
@@ -952,7 +955,7 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.contains.ContainsMixin.contains_duplicates">
 <code class="sig-name descname">contains_duplicates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.contains_duplicates" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is iterable and <em>does</em> contain duplicates.</p>
@@ -975,9 +978,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.contains.ContainsMixin.contains_only">
-<code class="sig-name descname">contains_only</code><span class="sig-paren">(</span><em class="sig-param">*items</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.contains_only" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">contains_only</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">items</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.contains_only" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val contains <em>only</em> the given item or items.</p>
 <p>Checks if the collection contains only the given item or items using <code class="docutils literal notranslate"><span class="pre">in</span></code> operator.</p>
 <dl class="field-list simple">
@@ -1006,9 +1009,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.contains.ContainsMixin.contains_sequence">
-<code class="sig-name descname">contains_sequence</code><span class="sig-paren">(</span><em class="sig-param">*items</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.contains_sequence" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">contains_sequence</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">items</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.contains_sequence" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val contains the given ordered sequence of items.</p>
 <p>Checks if the collection contains the given sequence of items using <code class="docutils literal notranslate"><span class="pre">in</span></code> operator.</p>
 <dl class="field-list simple">
@@ -1036,9 +1039,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.contains.ContainsMixin.does_not_contain">
-<code class="sig-name descname">does_not_contain</code><span class="sig-paren">(</span><em class="sig-param">*items</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.does_not_contain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">does_not_contain</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">items</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.does_not_contain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val does not contain the given item or items.</p>
 <p>Checks if the collection excludes the given item or items using <code class="docutils literal notranslate"><span class="pre">in</span></code> operator.</p>
 <dl class="field-list simple">
@@ -1073,7 +1076,7 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.contains.ContainsMixin.does_not_contain_duplicates">
 <code class="sig-name descname">does_not_contain_duplicates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.does_not_contain_duplicates" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is iterable and <em>does not</em> contain any duplicates.</p>
@@ -1096,7 +1099,7 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.contains.ContainsMixin.is_empty">
 <code class="sig-name descname">is_empty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.is_empty" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is empty.</p>
@@ -1121,9 +1124,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.contains.ContainsMixin.is_in">
-<code class="sig-name descname">is_in</code><span class="sig-paren">(</span><em class="sig-param">*items</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.is_in" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_in</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">items</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.is_in" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is equal to one of the given items.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -1148,7 +1151,7 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.contains.ContainsMixin.is_not_empty">
 <code class="sig-name descname">is_not_empty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.is_not_empty" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is <em>not</em> empty.</p>
@@ -1173,9 +1176,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.contains.ContainsMixin.is_not_in">
-<code class="sig-name descname">is_not_in</code><span class="sig-paren">(</span><em class="sig-param">*items</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.is_not_in" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_not_in</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">items</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.contains.ContainsMixin.is_not_in" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is not equal to one of the given items.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -1205,14 +1208,14 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </div>
 <div class="section content" id="module-assertpy.date">
 <span id="date"></span><h1 class="title">date<a class="headerlink" href="#module-assertpy.date" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.date.DateMixin">
 <em class="property">class </em><code class="sig-name descname">DateMixin</code><a class="headerlink" href="#assertpy.date.DateMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Date and time assertions mixin.</p>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.date.DateMixin.is_after">
-<code class="sig-name descname">is_after</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.date.DateMixin.is_after" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_after</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.date.DateMixin.is_after" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a date and is after other date.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -1241,9 +1244,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.date.DateMixin.is_before">
-<code class="sig-name descname">is_before</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.date.DateMixin.is_before" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_before</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.date.DateMixin.is_before" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a date and is before other date.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -1272,9 +1275,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.date.DateMixin.is_equal_to_ignoring_milliseconds">
-<code class="sig-name descname">is_equal_to_ignoring_milliseconds</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.date.DateMixin.is_equal_to_ignoring_milliseconds" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_equal_to_ignoring_milliseconds</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.date.DateMixin.is_equal_to_ignoring_milliseconds" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a date and is equal to other date to the second.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -1303,9 +1306,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.date.DateMixin.is_equal_to_ignoring_seconds">
-<code class="sig-name descname">is_equal_to_ignoring_seconds</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.date.DateMixin.is_equal_to_ignoring_seconds" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_equal_to_ignoring_seconds</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.date.DateMixin.is_equal_to_ignoring_seconds" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a date and is equal to other date to the minute.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -1334,9 +1337,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.date.DateMixin.is_equal_to_ignoring_time">
-<code class="sig-name descname">is_equal_to_ignoring_time</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.date.DateMixin.is_equal_to_ignoring_time" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_equal_to_ignoring_time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.date.DateMixin.is_equal_to_ignoring_time" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a date and is equal to other date ignoring time.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -1370,14 +1373,14 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </div>
 <div class="section content" id="module-assertpy.dict">
 <span id="dict"></span><h1 class="title">dict<a class="headerlink" href="#module-assertpy.dict" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.dict.DictMixin">
 <em class="property">class </em><code class="sig-name descname">DictMixin</code><a class="headerlink" href="#assertpy.dict.DictMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Dict assertions mixin.</p>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.dict.DictMixin.contains_entry">
-<code class="sig-name descname">contains_entry</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.contains_entry" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">contains_entry</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.contains_entry" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a dict and contains the given entry or entries.</p>
 <p>Checks if the dict contains the given key-value pair or pairs.</p>
 <dl class="field-list simple">
@@ -1416,9 +1419,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.dict.DictMixin.contains_key">
-<code class="sig-name descname">contains_key</code><span class="sig-paren">(</span><em class="sig-param">*keys</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.contains_key" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">contains_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">keys</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.contains_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts the val is a dict and contains the given key or keys.  Alias for <a class="reference internal" href="#assertpy.contains.ContainsMixin.contains" title="assertpy.contains.ContainsMixin.contains"><code class="xref py py-meth docutils literal notranslate"><span class="pre">contains()</span></code></a>.</p>
 <p>Checks if the dict contains the given key or keys using <code class="docutils literal notranslate"><span class="pre">in</span></code> operator.</p>
 <dl class="field-list simple">
@@ -1444,9 +1447,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.dict.DictMixin.contains_value">
-<code class="sig-name descname">contains_value</code><span class="sig-paren">(</span><em class="sig-param">*values</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.contains_value" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">contains_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.contains_value" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a dict and contains the given value or values.</p>
 <p>Checks if the dict contains the given value or values in <em>any</em> key.</p>
 <dl class="field-list simple">
@@ -1472,9 +1475,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.dict.DictMixin.does_not_contain_entry">
-<code class="sig-name descname">does_not_contain_entry</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.does_not_contain_entry" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">does_not_contain_entry</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.does_not_contain_entry" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a dict and does not contain the given entry or entries.</p>
 <p>Checks if the dict excludes the given key-value pair or pairs.</p>
 <dl class="field-list simple">
@@ -1508,9 +1511,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.dict.DictMixin.does_not_contain_key">
-<code class="sig-name descname">does_not_contain_key</code><span class="sig-paren">(</span><em class="sig-param">*keys</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.does_not_contain_key" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">does_not_contain_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">keys</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.does_not_contain_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts the val is a dict and does not contain the given key or keys.  Alias for <a class="reference internal" href="#assertpy.contains.ContainsMixin.does_not_contain" title="assertpy.contains.ContainsMixin.does_not_contain"><code class="xref py py-meth docutils literal notranslate"><span class="pre">does_not_contain()</span></code></a>.</p>
 <p>Checks if the dict excludes the given key or keys using <code class="docutils literal notranslate"><span class="pre">in</span></code> operator.</p>
 <dl class="field-list simple">
@@ -1536,9 +1539,9 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.dict.DictMixin.does_not_contain_value">
-<code class="sig-name descname">does_not_contain_value</code><span class="sig-paren">(</span><em class="sig-param">*values</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.does_not_contain_value" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">does_not_contain_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">values</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.dict.DictMixin.does_not_contain_value" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a dict and does not contain the given value or values.</p>
 <p>Checks if the dict excludes the given value or values across <em>all</em> keys.</p>
 <dl class="field-list simple">
@@ -1569,7 +1572,7 @@ or <a class="reference internal" href="#assertpy.numeric.NumericMixin.is_between
 </div>
 <div class="section content" id="module-assertpy.dynamic">
 <span id="dynamic"></span><h1 class="title">dynamic<a class="headerlink" href="#module-assertpy.dynamic" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.dynamic.DynamicMixin">
 <em class="property">class </em><code class="sig-name descname">DynamicMixin</code><a class="headerlink" href="#assertpy.dynamic.DynamicMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
@@ -1606,14 +1609,14 @@ assertions, we can rewrite the above example as:</p>
 </div>
 <div class="section content" id="module-assertpy.exception">
 <span id="exception"></span><h1 class="title">exception<a class="headerlink" href="#module-assertpy.exception" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.exception.ExceptionMixin">
 <em class="property">class </em><code class="sig-name descname">ExceptionMixin</code><a class="headerlink" href="#assertpy.exception.ExceptionMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Expected exception mixin.</p>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.exception.ExceptionMixin.raises">
-<code class="sig-name descname">raises</code><span class="sig-paren">(</span><em class="sig-param">ex</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.exception.ExceptionMixin.raises" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">raises</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ex</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.exception.ExceptionMixin.raises" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is callable and set the expected exception.</p>
 <p>Just sets the expected exception, but never calls val, and therefore never failes. You must
 chain to <a class="reference internal" href="#assertpy.exception.ExceptionMixin.when_called_with" title="assertpy.exception.ExceptionMixin.when_called_with"><code class="xref py py-meth docutils literal notranslate"><span class="pre">when_called_with()</span></code></a> to invoke <code class="docutils literal notranslate"><span class="pre">val()</span></code>.</p>
@@ -1636,9 +1639,9 @@ chain to <a class="reference internal" href="#assertpy.exception.ExceptionMixin.
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.exception.ExceptionMixin.when_called_with">
-<code class="sig-name descname">when_called_with</code><span class="sig-paren">(</span><em class="sig-param">*some_args</em>, <em class="sig-param">**some_kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.exception.ExceptionMixin.when_called_with" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">when_called_with</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">some_args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">some_kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.exception.ExceptionMixin.when_called_with" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val, when invoked with the given args and kwargs, raises the expected exception.</p>
 <p>Invokes <code class="docutils literal notranslate"><span class="pre">val()</span></code> with the given args and kwargs.  You must first set the expected
 exception with <a class="reference internal" href="#assertpy.exception.ExceptionMixin.raises" title="assertpy.exception.ExceptionMixin.raises"><code class="xref py py-meth docutils literal notranslate"><span class="pre">raises()</span></code></a>.</p>
@@ -1678,7 +1681,7 @@ exception with <a class="reference internal" href="#assertpy.exception.Exception
 </div>
 <div class="section content" id="module-assertpy.extracting">
 <span id="extracting"></span><h1 class="title">extracting<a class="headerlink" href="#module-assertpy.extracting" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.extracting.ExtractingMixin">
 <em class="property">class </em><code class="sig-name descname">ExtractingMixin</code><a class="headerlink" href="#assertpy.extracting.ExtractingMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
@@ -1748,9 +1751,9 @@ argument each item in the collection, and the extracted items are ordered by the
 function return values:</p>
 <pre class="code"><code class="python"><span class="n">assert_that</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">extracting</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="o">-</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">is_equal_to</span><span class="p">([</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie&#39;</span><span class="p">])</span>
 </code></pre>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.extracting.ExtractingMixin.extracting">
-<code class="sig-name descname">extracting</code><span class="sig-paren">(</span><em class="sig-param">*names</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.extracting.ExtractingMixin.extracting" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">extracting</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">names</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.extracting.ExtractingMixin.extracting" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is iterable, then extracts the named attributes, properties, or
 zero-arg methods into a list (or list of tuples if multiple names are given).</p>
 <dl class="field-list simple">
@@ -1806,12 +1809,12 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </div>
 <div class="section content" id="module-assertpy.file">
 <span id="file"></span><h1 class="title">file<a class="headerlink" href="#module-assertpy.file" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.file.FileMixin">
 <em class="property">class </em><code class="sig-name descname">FileMixin</code><a class="headerlink" href="#assertpy.file.FileMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>File assertions mixin.</p>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.file.FileMixin.does_not_exist">
 <code class="sig-name descname">does_not_exist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.file.FileMixin.does_not_exist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a path and that it does <em>not</em> exist.</p>
@@ -1833,7 +1836,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.file.FileMixin.exists">
 <code class="sig-name descname">exists</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.file.FileMixin.exists" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a path and that it exists.</p>
@@ -1855,9 +1858,9 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.file.FileMixin.is_child_of">
-<code class="sig-name descname">is_child_of</code><span class="sig-paren">(</span><em class="sig-param">parent</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.file.FileMixin.is_child_of" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_child_of</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.file.FileMixin.is_child_of" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is an existing path to a file and that file is a child of parent.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -1883,7 +1886,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.file.FileMixin.is_directory">
 <code class="sig-name descname">is_directory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.file.FileMixin.is_directory" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a <em>directory</em> and that it exists.</p>
@@ -1904,7 +1907,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.file.FileMixin.is_file">
 <code class="sig-name descname">is_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.file.FileMixin.is_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a <em>file</em> and that it exists.</p>
@@ -1925,9 +1928,9 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.file.FileMixin.is_named">
-<code class="sig-name descname">is_named</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.file.FileMixin.is_named" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_named</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.file.FileMixin.is_named" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is an existing path to a file and that file is named filename.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -1953,9 +1956,9 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt class="title is-5" id="assertpy.file.contents_of">
-<code class="sig-name descname">contents_of</code><span class="sig-paren">(</span><em class="sig-param">file</em>, <em class="sig-param">encoding='utf-8'</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.file.contents_of" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">contents_of</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file</span></em>, <em class="sig-param"><span class="n">encoding</span><span class="o">=</span><span class="default_value">'utf-8'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.file.contents_of" title="Permalink to this definition">¶</a></dt>
 <dd><p>Helper to read the contents of the given file or path into a string with the given encoding.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -1967,7 +1970,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 <p class="rubric subtitle"style="margin:0.2em 0;">Examples</p>
 
-<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="k">import</span> <span class="n">assert_that</span><span class="p">,</span> <span class="n">contents_of</span>
+<pre class="code"><code class="python"><span class="kn">from</span> <span class="nn">assertpy</span> <span class="kn">import</span> <span class="n">assert_that</span><span class="p">,</span> <span class="n">contents_of</span>
 
 <span class="n">contents</span> <span class="o">=</span> <span class="n">contents_of</span><span class="p">(</span><span class="s1">&#39;foo.txt&#39;</span><span class="p">)</span>
 <span class="n">assert_that</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span><span class="o">.</span><span class="n">starts_with</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">ends_with</span><span class="p">(</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;oob&#39;</span><span class="p">)</span>
@@ -1991,7 +1994,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </div>
 <div class="section content" id="module-assertpy.helpers">
 <span id="helpers"></span><h1 class="title">helpers<a class="headerlink" href="#module-assertpy.helpers" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.helpers.HelpersMixin">
 <em class="property">class </em><code class="sig-name descname">HelpersMixin</code><a class="headerlink" href="#assertpy.helpers.HelpersMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
@@ -2001,14 +2004,14 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </div>
 <div class="section content" id="module-assertpy.numeric">
 <span id="numeric"></span><h1 class="title">numeric<a class="headerlink" href="#module-assertpy.numeric" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin">
 <em class="property">class </em><code class="sig-name descname">NumericMixin</code><a class="headerlink" href="#assertpy.numeric.NumericMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Numeric assertions mixin.</p>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_between">
-<code class="sig-name descname">is_between</code><span class="sig-paren">(</span><em class="sig-param">low</em>, <em class="sig-param">high</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_between" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_between</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">low</span></em>, <em class="sig-param"><span class="n">high</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_between" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is between low and high.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -2045,9 +2048,9 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_close_to">
-<code class="sig-name descname">is_close_to</code><span class="sig-paren">(</span><em class="sig-param">other</em>, <em class="sig-param">tolerance</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_close_to" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_close_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em>, <em class="sig-param"><span class="n">tolerance</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_close_to" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is close to other within tolerance.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -2083,9 +2086,9 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_greater_than">
-<code class="sig-name descname">is_greater_than</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_greater_than" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_greater_than</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_greater_than" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is greater than other.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -2118,9 +2121,9 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_greater_than_or_equal_to">
-<code class="sig-name descname">is_greater_than_or_equal_to</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_greater_than_or_equal_to" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_greater_than_or_equal_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_greater_than_or_equal_to" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is greater than or equal to other.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -2155,7 +2158,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_inf">
 <code class="sig-name descname">is_inf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_inf" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is real number and is <code class="docutils literal notranslate"><span class="pre">Inf</span></code> (infinity).</p>
@@ -2177,9 +2180,9 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_less_than">
-<code class="sig-name descname">is_less_than</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_less_than" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_less_than</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_less_than" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is less than other.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -2212,9 +2215,9 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_less_than_or_equal_to">
-<code class="sig-name descname">is_less_than_or_equal_to</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_less_than_or_equal_to" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_less_than_or_equal_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_less_than_or_equal_to" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is less than or equal to other.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -2249,7 +2252,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_nan">
 <code class="sig-name descname">is_nan</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_nan" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is real number and is <code class="docutils literal notranslate"><span class="pre">NaN</span></code> (not a number).</p>
@@ -2271,7 +2274,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_negative">
 <code class="sig-name descname">is_negative</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_negative" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is less than zero.</p>
@@ -2293,9 +2296,9 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_not_between">
-<code class="sig-name descname">is_not_between</code><span class="sig-paren">(</span><em class="sig-param">low</em>, <em class="sig-param">high</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_not_between" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_not_between</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">low</span></em>, <em class="sig-param"><span class="n">high</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_not_between" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is <em>not</em> between low and high.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -2323,9 +2326,9 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_not_close_to">
-<code class="sig-name descname">is_not_close_to</code><span class="sig-paren">(</span><em class="sig-param">other</em>, <em class="sig-param">tolerance</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_not_close_to" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_not_close_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em>, <em class="sig-param"><span class="n">tolerance</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_not_close_to" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is <em>not</em> close to other within tolerance.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -2353,7 +2356,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_not_inf">
 <code class="sig-name descname">is_not_inf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_not_inf" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is real number and is <em>not</em> <code class="docutils literal notranslate"><span class="pre">Inf</span></code> (infinity).</p>
@@ -2376,7 +2379,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_not_nan">
 <code class="sig-name descname">is_not_nan</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_not_nan" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is real number and is <em>not</em> <code class="docutils literal notranslate"><span class="pre">NaN</span></code> (not a number).</p>
@@ -2399,7 +2402,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_not_zero">
 <code class="sig-name descname">is_not_zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_not_zero" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is <em>not</em> zero.</p>
@@ -2421,7 +2424,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_positive">
 <code class="sig-name descname">is_positive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_positive" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is greater than zero.</p>
@@ -2443,7 +2446,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.numeric.NumericMixin.is_zero">
 <code class="sig-name descname">is_zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.numeric.NumericMixin.is_zero" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is numeric and is zero.</p>
@@ -2469,7 +2472,7 @@ zero-arg methods into a list (or list of tuples if multiple names are given).</p
 </div>
 <div class="section content" id="module-assertpy.snapshot">
 <span id="snapshot"></span><h1 class="title">snapshot<a class="headerlink" href="#module-assertpy.snapshot" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.snapshot.SnapshotMixin">
 <em class="property">class </em><code class="sig-name descname">SnapshotMixin</code><a class="headerlink" href="#assertpy.snapshot.SnapshotMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
@@ -2497,13 +2500,13 @@ unit tests.</p>
 binary data.</p>
 <p><strong>Updating</strong></p>
 <p>It’s easy to update your snapshots…just delete them all and re-run the test suite to regenerate all snapshots.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Snapshots require Python 3.x</p>
+<div class="message is-info">
+<p class="message-header">Note</p>
+<p class="message-body">Snapshots require Python 3.x</p>
 </div>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.snapshot.SnapshotMixin.snapshot">
-<code class="sig-name descname">snapshot</code><span class="sig-paren">(</span><em class="sig-param">id=None</em>, <em class="sig-param">path='__snapshots'</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.snapshot.SnapshotMixin.snapshot" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">snapshot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">path</span><span class="o">=</span><span class="default_value">'__snapshots'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.snapshot.SnapshotMixin.snapshot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is identical to the on-disk snapshot stored previously.</p>
 <p>On the first run of a test before the snapshot file has been saved, a snapshot is created,
 stored to disk, and the test <em>always</em> passes.  But on all subsequent runs, val is compared
@@ -2556,14 +2559,14 @@ committed to source control alongside any code changes.</p>
 </div>
 <div class="section content" id="module-assertpy.string">
 <span id="string"></span><h1 class="title">string<a class="headerlink" href="#module-assertpy.string" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
+<dl class="py class">
 <dt class="title is-5" id="assertpy.string.StringMixin">
 <em class="property">class </em><code class="sig-name descname">StringMixin</code><a class="headerlink" href="#assertpy.string.StringMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>String assertions mixin.</p>
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.string.StringMixin.contains_ignoring_case">
-<code class="sig-name descname">contains_ignoring_case</code><span class="sig-paren">(</span><em class="sig-param">*items</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.contains_ignoring_case" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">contains_ignoring_case</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">items</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.contains_ignoring_case" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is string and contains the given item or items.</p>
 <p>Walks val and checks for item or items using the <code class="docutils literal notranslate"><span class="pre">==</span></code> operator and <code class="docutils literal notranslate"><span class="pre">str.lower()</span></code>.</p>
 <dl class="field-list simple">
@@ -2591,9 +2594,9 @@ committed to source control alongside any code changes.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.string.StringMixin.does_not_match">
-<code class="sig-name descname">does_not_match</code><span class="sig-paren">(</span><em class="sig-param">pattern</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.does_not_match" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">does_not_match</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pattern</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.does_not_match" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is string and does not match the given regex pattern.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -2622,9 +2625,9 @@ committed to source control alongside any code changes.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.string.StringMixin.ends_with">
-<code class="sig-name descname">ends_with</code><span class="sig-paren">(</span><em class="sig-param">suffix</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.ends_with" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">ends_with</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">suffix</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.ends_with" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is string or iterable and ends with suffix.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -2651,7 +2654,7 @@ committed to source control alongside any code changes.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.string.StringMixin.is_alpha">
 <code class="sig-name descname">is_alpha</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.is_alpha" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is non-empty string and all characters are alphabetic (using <code class="docutils literal notranslate"><span class="pre">str.isalpha()</span></code>).</p>
@@ -2672,7 +2675,7 @@ committed to source control alongside any code changes.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.string.StringMixin.is_digit">
 <code class="sig-name descname">is_digit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.is_digit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is non-empty string and all characters are digits (using <code class="docutils literal notranslate"><span class="pre">str.isdigit()</span></code>).</p>
@@ -2693,9 +2696,9 @@ committed to source control alongside any code changes.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.string.StringMixin.is_equal_to_ignoring_case">
-<code class="sig-name descname">is_equal_to_ignoring_case</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.is_equal_to_ignoring_case" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">is_equal_to_ignoring_case</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.is_equal_to_ignoring_case" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a string and is case-insensitive equal to other.</p>
 <p>Checks actual is equal to expected using the <code class="docutils literal notranslate"><span class="pre">==</span></code> operator and <code class="docutils literal notranslate"><span class="pre">str.lower()</span></code>.</p>
 <dl class="field-list simple">
@@ -2722,7 +2725,7 @@ committed to source control alongside any code changes.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.string.StringMixin.is_lower">
 <code class="sig-name descname">is_lower</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.is_lower" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is non-empty string and all characters are lowercase (using <code class="docutils literal notranslate"><span class="pre">str.lower()</span></code>).</p>
@@ -2743,7 +2746,7 @@ committed to source control alongside any code changes.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.string.StringMixin.is_unicode">
 <code class="sig-name descname">is_unicode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.is_unicode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is a unicode string.</p>
@@ -2765,7 +2768,7 @@ committed to source control alongside any code changes.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.string.StringMixin.is_upper">
 <code class="sig-name descname">is_upper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.is_upper" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is non-empty string and all characters are uppercase (using <code class="docutils literal notranslate"><span class="pre">str.upper()</span></code>).</p>
@@ -2786,9 +2789,9 @@ committed to source control alongside any code changes.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.string.StringMixin.matches">
-<code class="sig-name descname">matches</code><span class="sig-paren">(</span><em class="sig-param">pattern</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.matches" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">matches</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pattern</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.matches" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is string and matches the given regex pattern.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
@@ -2842,9 +2845,9 @@ include anchors in the regex pattern.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt class="title is-5" id="assertpy.string.StringMixin.starts_with">
-<code class="sig-name descname">starts_with</code><span class="sig-paren">(</span><em class="sig-param">prefix</em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.starts_with" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">starts_with</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">prefix</span></em><span class="sig-paren">)</span><a class="headerlink" href="#assertpy.string.StringMixin.starts_with" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that val is string or iterable and starts with prefix.</p>
 <dl class="field-list simple">
 <dt class="field-odd subtitle"style="margin:0.2em 0;">Parameters</dt>
